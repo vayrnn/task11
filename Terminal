@@ -1,1 +1,5 @@
-
+dotnet new console -n TestApp
+cd TestApp
+dotnet nuget add source "../packages" -n LocalNuGet
+dotnet add package MyLibrary --source ../packages
+dotnet run
